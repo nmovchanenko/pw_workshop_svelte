@@ -9,4 +9,4 @@ const client = createClient({
 	authToken: env.TURSO_AUTH_TOKEN
 });
 
-export const db = drizzle(client);
+export const db = drizzle({client});
